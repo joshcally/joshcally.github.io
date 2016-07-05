@@ -1,0 +1,59 @@
+div#header {
+    background-color: black;
+    height: 28px;
+}
+div#header a {
+    background-color: dimgrey;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+div#header a:hover {
+    background-color: grey;
+}
+
+div#title {
+    padding: 20px;
+    color: white
+}
+body {
+    background-color: darkred;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 3%;
+}
+div#section {
+    background-color: whitesmoke;
+    padding: 15px;
+}
+ul#formselection li{
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: center;
+    font-weight: bold;
+}
+li#pastforms {
+    text-decoration: underlined;
+}
+div#form {
+    background-color: lightgrey;
+    padding: 15px;
+}
+table#checklist {
+    width: 80%;
+    border: 2px black;
+    }
+tr#tableheader td{
+    font-weight: bold;
+}
+table#checklist tr:nth-child(even) {
+    background: #ededed;
+}
+div#footer {
+    background-color: black;
+    color: lightgrey;
+    padding: 3px;
+    text-align: center;
+    font-size: 10pt;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>V2 Readme</title>
+        <link rel="stylesheet" type="text/css" href="../../../main_page.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="Joshua Callahan">
+        <meta name="description" content="Description of Grad Progress implementation choices">
+        <meta name="date" content="January 21, 2016">
+    </head>
+    <body>    
+        <div id="header">         
+            <a href="../../index.html">Home</a>
+            <a href="../../index.html">Projects</a>
+            <a href="http://uofu-cs4540-0.westus.cloudapp.azure.com/Class_Examples">Class Examples</a>
+            <a href="http://www.cpuofu.com/Josh/">About Josh</a>
+        </div>
+    
+        <div id=title>
+            <h1>Readme</h1>
+        </div>
+        
+        <div id=description> 
+            <p>Name: Joshua Callahan</p>
+            <p>GitHub repo:  https://github.com/uofu-cs4540/691598.git </p>
+            <h3>Island Cars</h3>
+            <p>During a particularly work-heavy week of the busy CS-filled semester, I impulsively bought flights to Kauai for the moment finals ended.  While searching for a good car rental agency on this tropical paradise of an island, I came across this site: http://www.islandcars.net.  The colors are bland, the font is outdated, and the links have been promising improvements for the last 13 years.  If I had stumbled upon that page unknowingly I would have assumed the Island Cars business had bit the dust decades ago.  Upon inspection the header tag revealed that the last update to this site was performed on May 20, 2003.  It is about time for an update.  Chris and I decided to redesign the entire site as a challenge for our final project.  We created the main page with Bootstrap to give it a professional feel.  Users can check certain dates for vehicle availability.  We allowed reservations to be made on the site that automatically store information in a database.  An administrator may securely log in to manage the vehicle fleet and process reservations.  These improvements provide much of the functionality that we would expect to see from a rental agency website.  It is possible that the information we display on the website and the ability to make reservations could save the agency from hiring too many people to perform those simple tasks.  With a professional and useful website completed, Chris and I are proud to display our work for future employers.  This site has the potential to become the live website for Island Cars of Kauai if they wanted to tweak it to make it their own.
+            </p>
+             <h3>TETRIS</h3>
+             <p>Team: Josh Callahan & Chris Weeter
+            </p>
+             <p>Product Description: We built TETRIS on an HTML5 Canvas using PIXI
+            </p>
+             <p>Software Engineering Techniques: Our Tetris game is a class object. It uses a matrix board that contains
+                 Cell objects. This makes the methods easy to understand.
+            </p>
+            <p>Additional Features: This game features the original Tetris soundtrack! There are other sounds
+                as well. There is chain scoring with multiple lines providing more points.  The levels increment
+                over time.  The game allows for a restart when finished.  High scores are displayed.
+            </p>
+             <p>Note to TA: Use Chrome! <br>
+             The unobfuscated version can be found on either of our github repos.
+            <h3>V7</h3>
+             <p>Testing: Sign in as User: dgs, Password: graduation
+            <p>Product Description: The DGS now has access to Student Performance Metrics pulled from the database.
+            </p>
+            <p>Graph Design Decisions: The idea behind my 3 graphs was to allow the DGS to keep track of how the advisors
+                are helping students progress through the program.
+                The first bar graph is useful because it allows the DGS to see how each advisor is
+                handling their students.  An advisor with many students behind schedule will easily stick out in the graph.
+                The second pie chart allows the advisor to see how the students are distributed among advisors.  This would
+                allow the DGS to maintain an even workload for all the advisors.
+                The third scatter plot is useful because it allows the DGS to see trends in the amount of credit hours a student
+                has completed compared with his/her overall GPA.  
+            <h3>V6</h3>
+            <p>Product Description: My entire CSS design has been replaced by Bootstrap components.  It now looks professional.
+            </p>
+            <p>Bootstrap Additions:
+                <ul>
+                    <li>Cover Page</li>
+                    <li>Login</li>
+                    <li>Navbar</li>
+                    <li>Buttons</li>
+                    <li>New User Form</li>
+                    <li>Carousel</li>
+                    <li>Sticky footers</li>
+                    <li>Glyphicons</li>
+                    <li>Labels</li>
+                    <li>Table</li>
+                </ul>
+            </p>        
+            <p>Screen Size Scalability:  The pages are built to fit on all devices. The navbar at the top becomes a dropdown menu
+                for mobile devices.  The form labels are to the left of the input boxes on bigger screens, but are placed above them
+                on a mobile screen.  A mobile user would have no problems creating an account and viewing information.  Large buttons
+                are used in the place of small hyperlinks in most cases, allowing mobile users to have an easier time.  The cover page
+                image fills any size of screen.
+            </p>
+            <p>Comparison: My previous design was custom built to simply fulfill most of the functionality it needed. The color scheme
+                looked good but the fonts and block containers looked like they were designed a decade ago.  The current Bootstrap
+                site is more modern and professional. It is built to be used on screens of all sizes unlike the previous custom version.
+                It looks more generic, but my opinion is that people are comfortable with sites that all look the same.
+            </p>
+            <p>Testing: Sign in as User: jonny, Password: password
+            <h3>V5</h3>
+            <p>Product Description: Users can create accounts and log in with those accounts.  Certain webpages can only be viewed
+                by those who are logged in as a certain role.
+            </p>
+            <p>Design Decisions: The login and password inputs are shown on the main page.  When a user attempts to view a 
+                webpage containing user information without logging in, they are redirected to the main page.  Passwords are hashed
+                using bcrypt before being entered into the server database.</p>
+             <p>Notes to TA's: Use Chrome. Safari does not support HTML5 Validation.  Create an account and log in as that
+                 user or use the provided example on the main page.
+             <p>Testing: I used Chrome to log in and out of different accounts.  An example account is shown in the main page.</p>
+             <p>References: The verifyLogin portion of my assignment relied upon Jim's Girl Scout Cookie website.  The rest was my own
+                 decision, adding pieces of information to all pages in my existing assignment.
+             </p>
+            <h3>V4</h3>
+            <p>Product Description: My Progress Tracker now lets a user view a homepage with forms that are held in a database.
+                New users and progress forms can be created and added to the database.</p>
+            <p>Form Validation: To create a new user requires a few textboxes that need form validation. I relied upon
+                Chrome's "required" keyword in html that will pull up warning box if a text entry is not in the right format.
+                This feature would not work for Safari. I used the built-in HTML5 validations that are quite useful.
+                Creating a new progress form was a different matter. I decided to only use selection boxes and checkboxes
+                to make it impossible for the user to submit erroneous data.</p>
+             <p>Design Decisions: The majority of my time was spent fixing the database so that user and form data stayed consistent
+                across all tables.  I did not find it necessary to update the new forms or edit old forms. This task seemed unnecessary
+                when compared with the core functionality of the progress tracker.
+             <p>Testing: I started my design using a hard coded student profile.  Eventually I slowly worked my way into having
+                 each page custom built to fit whichever student was logged in.  There are more than enough test data in my database.</p>
+             <p>References: This assignment was accomplished with inspiration from Jim's code.  There are tiny snippets of html
+                 validation that are pulled from W3 Schools.   
+            <h3>V3</h3>
+            <p>Testing: Testing is simple in this assignment.  Every link can be accessed in 5 minutes to make sure they all work. </p> 
+            <p>References: My inspiration came directly from Jim's example code and no other sources.</p>
+            <p>Peer Review:  I looked at Chris Weeter's webpages. I liked his Utes logo and top menu. The red is a good color scheme
+                for the U. His tables are straightforward and simple which is great. I like how he uses checkmarkers and red X's to 
+                show student compliance. I suggested that he add side margins to his pages, change a signature line into a checkbox, 
+                and title his tables as "Students" instead of "List of Students".
+            </p>
+            <h3>V2</h3>
+            <p>Project Description: This is PHP! This second project converted the first simple webpage into an PHP MVC
+            stucture that sends variables and data back and forth.  It is now becoming more 
+            interactive.  The data values are hardcoded and will be accessing a database in the 
+            next assignment. </p> 
+            <p>Design Decisions: I didn't make many decisions with this project because the directory was chosen for me. 
+            You'll probably notice that it is structured so that Advisors link to Students who link to forms. </p> 
+            <p>Note to TA's: When clicking through my program you may notice that hitting the top back tabs will result 
+            in 'undefined' variable headings.  This is because I knew in the next assignment it would be much 
+            easier to update those using the database and not worry about them now. </p> 
+            <p>Testing: Testing is simple in this assignment.  Every link can be accessed in 5 minutes to make sure they all work. </p> 
+            <p>References: My inspiration came directly from Jim's example code and no other sources.</p>
+            <h3>V1</h3>
+            <p>Project Description: This was my very first experience with webpage design.  I found this project to be both time-consuming
+            and satisfying.  A few hours were spent learning the capabilities of HTML and CSS before starting.  W3
+            was by far the best tutorial that I found.  Many snippets of my code were used from the tutorials of
+            that website.</p>
+            <p>References: The HTML was completely hand typed from me.  I viewed the templates of other websites to get a feel
+                for how the divisions should be set up.  Most of my snippets of CSS were taken from the various
+                tutorials found on W3.  My background landscape image was taken from photographyzoomin.blogspot.com.  
+                The white shadow CSS behind the titles of my landing pages were taken from W3.  The top menu found
+                on every page was a variation found from the CSS lists page.  For each of these components I
+                customized them and made them my own.</p>
+            <p>Design Decisions: My Ph.D. progress form looks very different from the print copy.  I tried to design it in such a way
+                that it would be easier to get the right information when it was submitted.  This might help reduce
+                the amount of difficult parsing that would need to be done. A signature was replaced
+                by a checkbox because that is sufficient for most web forms.  
+                </p>  
+            <p>Testing: Testing was easy because I could click through every link to make sure they all worked.  I had to correct
+                several reference issues that I found through this method. </p>
+        </div>
+    </body>
+</html>

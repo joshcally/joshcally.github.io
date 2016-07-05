@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>V3 Schema</title>
+        <link rel="stylesheet" type="text/css" href="../../../../main_page.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="Joshua Callahan">
+        <meta name="description" content="Description of V3 schema">
+        <meta name="date" content="January 21, 2016">
+    </head>
+    <body>    
+        <div id="header">         
+            <a href="../../../index.html">Home</a>
+            <a href="../../../index.html">Projects</a>
+            <a href="http://uofu-cs4540-0.westus.cloudapp.azure.com/Class_Examples">Class Examples</a>
+            <a href="http://www.cpuofu.com/Josh/">About Josh</a>
+        </div>
+    
+        <div id=title>
+            <h1>V3 Schema</h1>
+        </div>
+        
+        <div id=description> 
+            <p>Name: Joshua Callahan</p>
+            <p>Design Decisions: I decided to begin this project with four simple tables.  They can become more complex if I need
+                to store more data. <br>
+                Users - Contains basic contact information for both students and advisors.  The faculty column is a boolean that will
+                distinguish between the two.
+                Advisors - This will link every advisor uid to zero or more student uid's. <br>
+                Forms - This will link every student to zero or more forms <br>
+                Form Data - Each row represents an individual form filled out by a student.
+            </p> 
+            <p>Collaboration: Chris Weeter and I both have job experience with databases.  We independently  
+                created sketches of tables.  Together we added our table designs together to create a better and 
+                almost complete version.  I had not thought about a student having multiple forms before talking
+                to Chris.  Now I can see we need a form data table as well as a form list that will link students
+                to their zero or more forms.   
+             </p> 
+             <p>
+                Schema Modifications Based on Peer Review: We discussed our design with Mitch Penrose and Van Dy, who told us that we needed
+                to create a primary key for the table of advisors and students.  We weren't sure if two entries could contain
+                both the same student and advisor but different timestamp.  We decided to replace the timestamp if that ever happened. </p>
+             <p>Creation: This schema was created using "add table" queries in MYSQL Workbench.  Most of the data types are int (for uID),
+                 tinyint(1)(boolean for task completed), varchar(45)(for date and contact information), and timestamp (for distinguishing between
+                 forms). </p> 
+        </div>
+    </body>
+</html>

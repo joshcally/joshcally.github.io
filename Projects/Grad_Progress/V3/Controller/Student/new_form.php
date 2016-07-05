@@ -1,0 +1,215 @@
+<?php
+/**
+ * Author: Joshua Callahan
+ * u0691598
+ * Spring 2016
+ */
+echo "<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link rel='stylesheet' type='text/css' href='../../Style/grad_progress.css'>
+        <meta charset='UTF-8'>
+        <meta name='author' content='Joshua Callahan'>
+        <meta name='description' content='New student form'>
+        <meta name='date' content='January 21, 2016'>
+    </head>
+    <body>    
+        <div id='header'>         
+            <a href='student_forms.php'>Student Profile</a>
+            <a href='http://www.utah.edu'>University of Utah</a>
+            <a href='http://www.cs.utah.edu'>School of Computing</a>
+            <a href='../Advisor/students.php'>Students</a>
+        </div>
+        
+        <div id='title'>
+            <h1>Due Progress Advisory Form for Ph.D. Degree</h1>
+        </div>
+        
+        <div id='form'>
+            <p>
+            Student Name: <input type='text' name='studentName' value='Harry Potter'><br>
+            Student ID: <input type='text' name='studentID' value='00123456'><br>
+            Degree: <select>
+                        <option value='computing'>Computing</option>
+                        <option value='computerScience'>Computer Science</option>
+                    </select> Track: 
+                    <select>
+                        <option value='artificialIntelligence'>Artificial Intelligence</option>
+                        <option value='machineLearning'>Machine Learning</option>
+                    </select> <br>
+                    Semester Admitted: 
+                    <select>
+                        <option value='fall13'>Fall 2013</option>
+                        <option value='spring14'>Spring 2014</option>
+                        <option value='fall14'>Fall 2014</option>
+                        <option value='spring15'>Spring 2015</option>
+                        <option value='fall15'>Fall 2015</option>
+                        <option value='spring16'>Spring 2016</option>
+                    </select> Number of semesters in the program: <input type='text' name='numSemesters' value=''><br>
+                    Advisor: <input type='text' name='advisor' value=''><br>
+                    Committee: <input type='text' name='committeeMember1' value=''>
+                    <input type='text' name='committeeMember2' value=''>
+                    <input type='text' name='committeeMember3' value=''>
+                    <input type='text' name='committeeMember4' value=''><br>
+                    Progress Checklist:
+                    <table id='checklist'>
+                    <tr id='tableheader'>
+                        <td>Completed?</td>
+                        <td>Expected Completion</td>
+                        <td>Event</td>
+                        <td>Good Progress</td> 
+                        <td>Acceptable Progress</td>
+                    </tr>
+                    <tr>
+                        <td><input type='checkbox' name='identifyAdvisor' value='identifyAdvisor'></td>
+                        <td><select>
+                            <option value='fall16'>Fall 2016</option>
+                            <option value='spring17'>Spring 2017</option>
+                            <option value='fall17'>Fall 2017</option>
+                            <option value='spring18'>Spring 2018</option>
+                            <option value='fall18'>Fall 2018</option>
+                            <option value='spring19'>Spring 2019</option>
+                        </select></td>
+                        <td>Identify Advisor</td> 
+                        <td>1 Semester</td>
+                        <td>2 Semesters</td>
+                    </tr>
+                    <tr>
+                    <td><input type='checkbox' name='identifyAdvisor' value='identifyAdvisor'></td>
+                        <td><select>
+                        <option value='fall16'>Fall 2016</option>
+                        <option value='spring17'>Spring 2017</option>
+                        <option value='fall17'>Fall 2017</option>
+                        <option value='spring18'>Spring 2018</option>
+                        <option value='fall18'>Fall 2018</option>
+                        <option value='spring19'>Spring 2019</option>
+                    </select></td>
+                    <td>Program of study approved by advisor and initial committee</td> 
+                    <td>4 Semesters</td>
+                    <td>5 Semesters</td>
+                </tr>
+                <tr>
+                    <td><input type='checkbox' name='identifyAdvisor' value='identifyAdvisor'></td>
+                    <td><select>
+                        <option value='fall16'>Fall 2016</option>
+                        <option value='spring17'>Spring 2017</option>
+                        <option value='fall17'>Fall 2017</option>
+                        <option value='spring18'>Spring 2018</option>
+                        <option value='fall18'>Fall 2018</option>
+                        <option value='spring19'>Spring 2019</option>
+                    </select></td>
+                    <td>Complete teaching mentorship</td> 
+                    <td>4 Semesters</td>
+                    <td>6 Semesters</td>
+                </tr>
+                <tr>
+                    <td><input type='checkbox' name='identifyAdvisor' value='identifyAdvisor'></td>
+                    <td><select>
+                        <option value='fall16'>Fall 2016</option>
+                        <option value='spring17'>Spring 2017</option>
+                        <option value='fall17'>Fall 2017</option>
+                        <option value='spring18'>Spring 2018</option>
+                        <option value='fall18'>Fall 2018</option>
+                        <option value='spring19'>Spring 2019</option>
+                    </select></td>
+                    <td>Complete Required Courses</td> 
+                    <td>5 Semesters</td>
+                    <td>6 Semesters</td>
+                </tr>
+                <tr>
+                    <td><input type='checkbox' name='identifyAdvisor' value='identifyAdvisor'></td>
+                    <td><select>
+                        <option value='fall16'>Fall 2016</option>
+                        <option value='spring17'>Spring 2017</option>
+                        <option value='fall17'>Fall 2017</option>
+                        <option value='spring18'>Spring 2018</option>
+                        <option value='fall18'>Fall 2018</option>
+                        <option value='spring19'>Spring 2019</option>
+                    </select></td>
+                    <td>Full Committee Formed</td> 
+                    <td>6 Semesters</td>
+                    <td>7 Semesters</td>
+            </tr>
+            <tr>
+                <td><input type='checkbox' name='identifyAdvisor' value='identifyAdvisor'></td>
+                <td><select>
+                    <option value='fall16'>Fall 2016</option>
+                    <option value='spring17'>Spring 2017</option>
+                    <option value='fall17'>Fall 2017</option>
+                    <option value='spring18'>Spring 2018</option>
+                    <option value='fall18'>Fall 2018</option>
+                    <option value='spring19'>Spring 2019</option>
+                </select></td>
+                <td>Program of study approved by committee</td> 
+                <td>6 Semesters</td>
+                <td>7 Semesters</td>
+            </tr>
+            <tr>
+                <td><input type='checkbox' name='identifyAdvisor' value='identifyAdvisor'></td>
+                <td><select>
+                    <option value='fall16'>Fall 2016</option>
+                    <option value='spring17'>Spring 2017</option>
+                    <option value='fall17'>Fall 2017</option>
+                    <option value='spring18'>Spring 2018</option>
+                    <option value='fall18'>Fall 2018</option>
+                    <option value='spring19'>Spring 2019</option>
+                </select></td>
+                <td>Written qualifier</td> 
+                <td>5 Semesters</td>
+                <td>6 Semesters</td>
+            </tr>
+            <tr>
+                <td><input type='checkbox' name='identifyAdvisor' value='identifyAdvisor'></td>
+                <td><select>
+                    <option value='fall16'>Fall 2016</option>
+                    <option value='spring17'>Spring 2017</option>
+                    <option value='fall17'>Fall 2017</option>
+                    <option value='spring18'>Spring 2018</option>
+                    <option value='fall18'>Fall 2018</option>
+                    <option value='spring19'>Spring 2019</option>
+                </select></td>
+                <td>Oral qualifier/Proposal</td> 
+                <td>7 Semesters</td>
+                <td>8 Semesters</td>
+            </tr>
+            <tr>
+                <td><input type='checkbox' name='identifyAdvisor' value='identifyAdvisor'></td>
+                <td><select>
+                    <option value='fall16'>Fall 2016</option>
+                    <option value='spring17'>Spring 2017</option>
+                    <option value='fall17'>Fall 2017</option>
+                    <option value='spring18'>Spring 2018</option>
+                    <option value='fall18'>Fall 2018</option>
+                    <option value='spring19'>Spring 2019</option>
+                </select></td>
+                <td>Dissertation defense</td> 
+                <td>10 Semesters</td>
+                <td>12 Semesters</td>
+            </tr>
+            <tr>
+                <td><input type='checkbox' name='identifyAdvisor' value='identifyAdvisor'></td>
+                <td><select>
+                    <option value='fall16'>Fall 2016</option>
+                    <option value='spring17'>Spring 2017</option>
+                    <option value='fall17'>Fall 2017</option>
+                    <option value='spring18'>Spring 2018</option>
+                    <option value='fall18'>Fall 2018</option>
+                    <option value='spring19'>Spring 2019</option>
+                </select></td>
+                <td>Final document</td> 
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </table><br>
+            Additional Notes:<br>
+        <textarea name='additionalNotes' type='text' cols='40' rows='8'></textarea><br>
+        <input type='checkbox' name='certifyValidity' value='certifyValidity'> I certify the above information is correct. <br>
+        <input type='submit' value='Submit'>
+        
+    </div>
+    <div id=footer>
+        <p>University of Utah School of Computing</p>
+    </div>
+    </body>
+</html>";
+?>

@@ -1,0 +1,47 @@
+
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="utf-8" http-equiv="encoding"/>
+    <title>Tetris Game</title>
+    
+    <link rel="stylesheet" href="./Resources/bootstrap.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="./Resources/bootstrap.min.js"></script> 
+    <script src="./Resources/pixi.min.js"></script>  
+    
+</head>
+<body> 
+
+  <div class="Tetris"> </div>
+  
+<audio id="themesong" loop>
+  <source src="./Resources/Tetris.ogg" type="audio/ogg">
+</audio>
+
+<audio id="click">
+  <source src="./Resources/click.mp3" type="audio/mp3">
+</audio>
+
+<audio id="laser">
+  <source src="./Resources/laser.mp3" type="audio/mp3">
+</audio>
+
+<div class="row">
+<div class="col-sm-5" id="GameCanvas">
+<script src='./Resources/traceur.js'></script>
+<script src='./Resources/obfuscated_tetris.js'></script>
+</div>
+<div class="col-sm-5">
+<div class="text-center"> <h1>High Scores</h1></div>
+<div id="highScores"></div>
+<div> Player Name: <input type="text" id="playerName"></div>
+    
+    </div>
+    </div>
+
+   </body>
+
+
+
+</html>

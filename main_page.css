@@ -1,0 +1,52 @@
+
+div#header {
+    background-color: black;
+    height: 28px;
+}
+div#header a {
+    background-color: darkred;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+div#header a:hover {
+    background-color: indianred;
+}
+
+div#title {
+    font-family: "Arial Black", Gadget, sans-serif;
+    position: center;
+    text-shadow: 2px 2px 8px ghostwhite;
+    padding-bottom: 20px;
+}
+div#description {
+    font-family: "Arial Black", Gadget, sans-serif;
+    position: center;
+    background-color: #ffffff;
+    opacity: 0.6;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 14pt;
+}
+
+p#welcome {
+    position: center-center;
+}
+p#quote {
+    font-style: italic;
+}
+
+body {
+    margin: 5%;
+    background-image: url("landscape.jpg");
+    background-size: cover;               
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+body.contain {
+  background-size: contain;
+}
+body.cover {
+  background-size: cover;
+}
