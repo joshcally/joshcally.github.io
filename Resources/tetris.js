@@ -1,35 +1,5 @@
 
-<!-- SELECT * FROM Tetris_Scores.ScoreTable ORDER BY Score DESC LIMIT 10 -->
 
-<html>
-<head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <meta content="utf-8" http-equiv="encoding"/>
-    <title>Tetris Game</title>
-    
-    <!-- THIS FIRST -->
-          <!-- ALL CSS FILES -->
-    
-    
-</head>
-<body> 
-  <div class="Tetris"> </div>
-  
-<audio id="themesong" loop>
-  <source src="./Resources/Tetris.ogg" type="audio/ogg">
-</audio>
-
-<audio id="click">
-  <source src="./Resources/click.mp3" type="audio/mp3">
-</audio>
-
-<audio id="laser">
-  <source src="./Resources/laser.mp3" type="audio/mp3">
-</audio>
-
-<div class="row">
-<div class="col-sm-5" id="GameCanvas">
-<script>
 var color_array = [0xff0000, 0x00ff00, 0x0000ff, 0xc44dff, 0x4dffff, 0xffff66, 0xffad33];
 var color_index = Math.floor((Math.random() * 7));
 var timer_descend;
@@ -783,12 +753,3 @@ function get_high_scores(  )
 after_load();
 var game_started = false;
 var game_lost = false;
-
-
-</script>
-</div>
-   </body>
-
-
-
-</html>
