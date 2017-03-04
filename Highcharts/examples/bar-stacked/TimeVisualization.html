@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>A2 Time Visualization</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Time Visualization'
+        },
+        xAxis: {
+            categories: ['Josh\'s Estimate', 'Josh\'s Average', 'Josh\'s Weekday', 'Josh\'s Weekend', 'Average Student\'s Weekday']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Hours'
+            }
+        },
+        legend: {
+            reversed: true
+        },
+        plotOptions: {
+            series: {
+                stacking: 'normal'
+            }
+        },
+        series: [{
+            name: 'Other',
+            data: [0, 0, 0, 0, 2.2]
+        }, {
+            name: 'Traveling',
+            data: [1.5, 1.9, 0.76, 3.04, 1.4]
+        }, {
+            name: 'Telephone Calls',
+            data: [0.125, 0, 0, 0, 0]
+        }, {
+            name: 'Volunteer Activities',
+            data: [0.167, 0.07, 0, 0.14, 0]
+        }, {
+            name: 'Religious & Spiritual Activities',
+            data: [0.67, 1.18, 0.67, 1.69, 0]
+        }, {
+            name: 'Sports, Exercise, & Recreation',
+            data: [1.15, 1.32, 0.21, 2.43, 2]
+        }, {
+            name: 'Socializing, Relaxing, & Leisure',
+            data: [3, 3.73, 3.4, 4.07, 2]
+        }, {
+            name: 'Eating & Drinking',
+            data: [1.5, 1.68, 1.36, 2, 1]
+        }, {
+            name: 'Government Services & Civic Obligations',
+            data: [0, 0, 0, 0, 0]
+        }, {
+            name: 'Household Services',
+            data: [0, 0, 0, 0, 0]
+        }, {
+            name: 'Professional & Personal Care Services',
+            data: [0, 0, 0, 0, 0]
+        }, {
+            name: 'Consumer Purchases',
+            data: [0.167, 0.04, 0, 0.07, 0]
+        }, {
+            name: 'Education',
+            data: [5, 2.85, 4.62, 1.06, 3.5]
+        }, {
+            name: 'Work',
+            data: [2, 1.79, 3.57, 0, 2.3]
+        }, {
+            name: 'Caring for Non Household Members',
+            data: [0.221, 0.21, 0, 0.42, 0]
+        }, {
+            name: 'Caring for Household Members',
+            data: [0, 0, 0, 0, 0]
+        }, {
+            name: 'Household Activities',
+            data: [0.5, 0.34, 0.25, 0.42, 0]
+        }, {
+            name: 'Personal Care',
+            data: [8, 8.89, 9.14, 8.64, 9.6]
+        }]
+    });
+});
+		</script>
+	</head>
+	<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>
